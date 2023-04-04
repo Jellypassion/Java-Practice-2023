@@ -215,6 +215,7 @@ public class MainTest {
         values2[0] = new int[5];
         values2[1] = new int[3];
         values2[2] = new int[8];
+        values2[2][1] = 3;
 
         print2DArray(values2);
     }
@@ -232,4 +233,38 @@ public class MainTest {
         }
     }
 
+    /*Написать программу, заносящую в массив первые 100 целых чисел, делящихся на 13 или на 17, и печатающую его.*/
+    @Test
+    void dividersArray() {
+        var array = new int[100];
+        var initialNumber = 1;
+        for (int i = 0; i <= array.length; i++) {
+            for (int j = initialNumber; j > 0; j++) {
+                if (i == array.length) {
+                    break;
+                }
+                if (j % 13 == 0 || j % 17 == 0) {
+                    array[i] = j;
+                    initialNumber = j + 1;
+                    break;
+                }
+            }
+        }
+        printIntArray(array);
+    }
+
+    @Test
+    void isEqualElementsTest() {
+        int[][] values1 = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8}
+        };
+        int[][] values2 = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8}
+        };
+        System.out.println(isEqualElements(values1, values2));
+    }
 }

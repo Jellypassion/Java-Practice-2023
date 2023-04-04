@@ -43,5 +43,28 @@ public class Main {
         }
     }
 
+    /*Написать метод equals, который определяет, равны ли между собой соответствующие элементы
+   2-х двумерных массивов.*/
+    public static boolean isEqualElements(int[][] array1, int[][] array2) {
+        boolean isEqual = true;
+        if (array1.length != array2.length) {
+            return false;
+        }
+        for (int i = 0; i < array1.length; i++) {
+            for (int j = 0; j < array1[i].length; j++) {
+                if (array1[i].length != array2[i].length) {
+                    isEqual = false;
+                    break;
+                } else if (array1[i][j] != array2[i][j]) {
+                    isEqual = false;
+                    break;
+                }
+            }
+            if (!isEqual)
+                break;
+        }
+        return isEqual;
+    }
+
 
 }
