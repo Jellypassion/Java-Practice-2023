@@ -267,4 +267,14 @@ public class MainTest {
         };
         System.out.println(isEqualElements(values1, values2));
     }
+
+    @Test
+    void calculateSumMinMaxTest() {
+        // has to calculate sum of 5, 6, 4
+        var array = new int[]{1, 2, 10, 5, 6, 4, 0};
+        System.out.println(calculateSumMinMax(array));
+    }
+
+
+
 }

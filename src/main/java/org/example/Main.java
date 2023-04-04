@@ -66,5 +66,35 @@ public class Main {
         return isEqual;
     }
 
+    //    Определить сумму элементов целочисленного массива, расположенных между минимальным и максимальным значениями.
+    public static int calculateSumMinMax(int[] array) {
+        var min = Integer.MAX_VALUE;
+        var max = Integer.MIN_VALUE;
+        var sumFromMinToMax = 0;
+        var indexMax = 0;
+        var indexMin = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+                indexMax = i;
+            }
+            if (array[i] < min) {
+                min = array[i];
+                indexMin = i;
+            }
+        }
+        for (int i = 0; i < array.length; i++) {
+            if (indexMin > indexMax) {
+                var temp = indexMin;
+                indexMin = indexMax;
+                indexMax = temp;
+            }
+            if (i > indexMin && i < indexMax){
+                sumFromMinToMax += array[i];
+            }
+        }
+        return sumFromMinToMax;
+    }
+
 
 }
