@@ -1,11 +1,10 @@
 package org.example;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.example.Main.*;
 
 public class MainTest {
@@ -274,7 +273,6 @@ public class MainTest {
         var array = new int[]{1, 2, 10, 5, 6, 4, 0};
         System.out.println(calculateSumMinMax(array));
     }
-
 
 
 }
