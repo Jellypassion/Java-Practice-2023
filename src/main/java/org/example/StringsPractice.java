@@ -6,8 +6,7 @@ public class StringsPractice {
      */
     public static String changeSmiles(String string) {
         if (string.contains(":(")) {
-            var newString = string.replace(":(", ":)");
-            return newString;
+            return string.replace(":(", ":)");
         } else {
             System.out.println("No sad smiles in this string...");
             return string;
