@@ -19,7 +19,6 @@ public class StringsPractice {
      */
     public static boolean checkStringForWords(String string, String word) {
 //        var split = string.split(" ");
-//        if (split.length == 1) return false;
 //        return (split[0].equalsIgnoreCase(word) && split[split.length-1].equals(word));
         return string.startsWith(word) && string.endsWith(word);
     }
