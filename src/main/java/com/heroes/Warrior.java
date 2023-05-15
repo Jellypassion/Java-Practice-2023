@@ -1,6 +1,6 @@
 package com.heroes;
 
-import com.enums.weapon.MeleeWeapon;
+import com.generics.weapon.MeleeWeapon;
 
 public class Warrior<T extends MeleeWeapon> extends Hero<T> {
 

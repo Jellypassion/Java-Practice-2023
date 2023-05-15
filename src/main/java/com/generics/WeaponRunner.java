@@ -1,8 +1,8 @@
-package com.enums;
+package com.generics;
 
-import com.enums.weapon.Bow;
-import com.enums.weapon.Sword;
-import com.enums.weapon.Weapon;
+import com.generics.weapon.Bow;
+import com.generics.weapon.Sword;
+import com.generics.weapon.Weapon;
 import com.heroes.Archer;
 import com.heroes.Hero;
 import com.heroes.Warrior;

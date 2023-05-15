@@ -1,4 +1,4 @@
-package com.enums;
+package com.generics;
 
 public class ListRunner {
     public static void main(String[] args) {
@@ -11,5 +11,7 @@ public class ListRunner {
         String element = list.get(2);
         System.out.println(element);
         System.out.println(list.getSize());
+
+
     }
 }

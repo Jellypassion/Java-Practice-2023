@@ -1,6 +1,6 @@
 package com.heroes;
 
-import com.enums.weapon.MagicWeapon;
+import com.generics.weapon.MagicWeapon;
 
 public class Mage<T extends MagicWeapon> extends Hero<T>{
     public Mage(String name, int damage) {

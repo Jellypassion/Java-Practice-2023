@@ -1,4 +1,4 @@
-package com.enums.weapon;
+package com.generics.weapon;
 
 public class Wand implements MagicWeapon {
     @Override

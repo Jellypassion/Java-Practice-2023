@@ -1,6 +1,6 @@
 package com.heroes;
 
-import com.enums.weapon.RangeWeapon;
+import com.generics.weapon.RangeWeapon;
 
 public class Archer<T extends RangeWeapon> extends Hero<T> {
     private Wolf wolf;
