@@ -11,6 +11,7 @@ public class ListExample {
         list.add("String4");
 
         list.iterator().forEachRemaining(System.out::println);
+//        list.forEach(System.out::println);
 
     }
 }

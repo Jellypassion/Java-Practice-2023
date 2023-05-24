@@ -10,7 +10,7 @@ public class IteratorExample {
         List<Integer> sourceLlist = List.of(1, 2, 3, 4, 5); // This creates an immutable collection
         List<Integer> list = new ArrayList<>(sourceLlist); // This makes the collection mutable
         Iterator<Integer> iterator = list.iterator();
-        //list.removeIf(next -> next == 3 || next == 4);
+        list.removeIf(next -> next == 3 || next == 4);
         while (iterator.hasNext()) {
             Integer next  = iterator.next();
             if (next == 3 || next == 4) {
