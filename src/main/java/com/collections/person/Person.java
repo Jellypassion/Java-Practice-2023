@@ -2,7 +2,7 @@ package com.collections.person;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Comparable<Person> {
     private int id;
     private String firstName;
     private String lastName;
@@ -48,4 +48,11 @@ public class Person {
                 ", lastName='" + lastName + '\'' +
                 '}';
     }
+
+    @Override
+    public int compareTo(Person o) {
+        return Integer.compare(id, o.id);
+    }
+
+
 }

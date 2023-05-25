@@ -25,7 +25,7 @@ public class MapExample {
         System.out.println(map.containsKey(4));
         System.out.println(map.size());
         System.out.println(map.isEmpty());
-        System.out.println(map.getOrDefault(3, null));
+        System.out.println(map.getOrDefault(3, new Person(0, null, null)));
 
     }
 }
