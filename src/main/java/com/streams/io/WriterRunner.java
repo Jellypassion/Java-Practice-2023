@@ -17,11 +17,12 @@ public class WriterRunner {
         try (Stream<String> lines = Files.lines(path)) { // try-w-resources is needed here
             lines.forEach(System.out::println);
         }
-//        try (BufferedWriter fileWriter = Files.newBufferedWriter(path)) {
+//        try (BufferedWriter fileWriter = Files.newBufferedWriter(path, APPEND)) {
 //            fileWriter.append("Hello World! ");
 //            fileWriter.newLine(); // BufferedWriter adds this method
 //            fileWriter.append("Java");
 //            fileWriter.newLine();
 //        }
+
     }
 }
