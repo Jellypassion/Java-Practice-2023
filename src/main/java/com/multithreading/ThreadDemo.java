@@ -3,6 +3,7 @@ package com.multithreading;
 public class ThreadDemo {
     public static void main(String[] args) {
         var simpleThread = new SimpleThread();
+        System.out.println(simpleThread.getName() + ":" + simpleThread.getState());
 
         // When implementing threads via Runnable interface the thread cannot start without class Thread
         // So we need to create a Thread instance for it
@@ -16,10 +17,13 @@ public class ThreadDemo {
 
         // To make this thread start separately method start() must be called
         simpleThread.start();
+        System.out.println(simpleThread.getName() + ":" + simpleThread.getState());
+
         runnableThread.start();
         lambdsThread.start();
         try {
             simpleThread.join(); // This method tells the thread to execute until it's terminated.
+            System.out.println(simpleThread.getName() + ":" + simpleThread.getState());
             runnableThread.join();
             lambdsThread.join();
         } catch (InterruptedException e) {
