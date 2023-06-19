@@ -1,4 +1,4 @@
-package com.multithreading.pool;
+package com.multithreading.concurrent.examples.pool;
 
 import java.util.Optional;
 import java.util.Queue;
