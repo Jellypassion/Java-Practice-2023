@@ -1,4 +1,4 @@
-package com.collections.map;
+package com.collections;
 
 import com.collections.person.Person;
 
